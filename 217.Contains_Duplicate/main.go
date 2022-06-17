@@ -17,7 +17,6 @@ func containsDuplicate(nums []int) bool {
 	}
 	return false
 }
-
 func main() {
 	nums := []int{1, 2, 3, 6}
 	fmt.Println(containsDuplicate(nums))
