@@ -20,8 +20,8 @@ func productExceptSelf(nums []int) []int {
 	}
 
 	return res
-
 }
+
 func main() {
 
 }
