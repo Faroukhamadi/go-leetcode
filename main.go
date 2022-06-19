@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("go pls sucks")
+	fmt.Println("go please doesn't actually suck")
 }
