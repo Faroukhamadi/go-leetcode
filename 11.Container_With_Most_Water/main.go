@@ -18,6 +18,19 @@ func maxArea(height []int) int {
 	return res
 }
 
+func maxAreaBruteForce(height []int) int {
+	// brute force
+	res := 0
+
+	for l := 0; l < len(height); l++ {
+		for r := 0; r < len(height); r++ {
+			area := (r - l) * min(height[l], height[r])
+			res = max(res, area)
+		}
+	}
+	return res
+}
+
 func max(a, b int) int {
 	if a > b {
 		return a
