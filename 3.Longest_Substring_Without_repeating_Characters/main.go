@@ -1,3 +1,7 @@
+package main
+
+import "fmt"
+
 func lengthOfLongestSubstring(s string) int {
 	if len(s) == 0 {
 		return 0
@@ -22,4 +26,8 @@ func maximum(i, j int) int {
 	}
 
 	return j
+}
+
+func main() {
+	fmt.Println(lengthOfLongestSubstring("slaps"))
 }
