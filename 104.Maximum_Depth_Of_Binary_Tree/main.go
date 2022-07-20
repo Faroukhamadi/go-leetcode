@@ -21,4 +21,5 @@ func max(a, b int) int {
 }
 
 func main() {
+
 }
