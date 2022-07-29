@@ -66,9 +66,9 @@ func main() {
 	head.Next = second
 	second.Next = third
 
-	sortList(head)
+	head = sortList(head)
 
-	cur := third
+	cur := head
 	for cur != nil {
 		fmt.Printf("%d -> ", cur.Val)
 		cur = cur.Next
