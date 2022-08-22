@@ -27,7 +27,6 @@ func (this *Trie) Insert(word string) {
 		}
 		currentNode = currentNode.children[charIndex]
 	}
-
 	currentNode.isEnd = true
 }
 
@@ -36,7 +35,6 @@ func (this *Trie) Search(word string) bool {
 	if lastNode == nil {
 		return false
 	}
-
 	return lastNode.isEnd
 }
 
@@ -54,6 +52,5 @@ func (this *Trie) searchWord(word string) *Node {
 		}
 		currentNode = currentNode.children[charIndex]
 	}
-
 	return currentNode
 }
