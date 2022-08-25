@@ -1,5 +1,7 @@
 package main
 
+import "log"
+
 func isHappy(n int) bool {
 	switch n {
 	case 1, 7:
@@ -22,5 +24,5 @@ func sumNum(n int) int {
 }
 
 func main() {
-
+	log.Println(isHappy(19))
 }
